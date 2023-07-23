@@ -14,7 +14,7 @@ void MUSART1_voidInit(void)
 
 	SET_BIT((USART1-> CR[0]), 3);			/* Enabling Transmitter */
 	SET_BIT((USART1-> CR[0]), 2);			/* Enabling Receiver */
-	SET_BIT((USART1-> CR[0]), 13);			/* Enabling USART */
+	SET_BIT((USART1-> CR[0]), 0);			/* Enabling USART */
 	
 	USART1 -> ISR = 0;						/* Clearing status register */
 }
